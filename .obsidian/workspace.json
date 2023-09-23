@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Recon/SubDomainEnum/Passive.md",
-                "mode": "source",
+                "file": "Server-Side/OS command injection.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recon/SubDomainEnum/Passive.md",
+                "file": "Server-Side/OS command injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Recon/SubDomainEnum/Passive.md",
+                "file": "Server-Side/OS command injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Recon/SubDomainEnum/Passive.md"
+                "file": "Server-Side/OS command injection.md"
+              }
+            }
+          },
+          {
+            "id": "bd8450096229b1a0",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
               }
             }
           }
@@ -148,16 +158,19 @@
   },
   "active": "0e9346c7c7108b20",
   "lastOpenFiles": [
-    "Recon/SubDomainEnum/Active.md",
     "Server-Side/File upload.md",
     "Server-Side/OS command injection.md",
-    "Server-Side/Directory Traversal.md",
+    "Server-Side/Directory Traversal - Path Traversal.md",
     "Server-Side/Authentication Vulns.md",
+    "Bypass/Bypass 2FA.md",
+    "Bypass",
+    "Server-Side/SQLi.md",
+    "Recon/SubDomainEnum/Passive.md",
+    "Recon/SubDomainEnum/Active.md",
     "Attachments/Pasted image 20230908210731.png",
     "Attachments/Pasted image 20230908201343.png",
     "Attachments/Pasted image 20230908165356.png",
     "Attachments/Pasted image 20230908161102.png",
-    "Server-Side/SQLi.md",
     "Attachments/Pasted image 20230908112550.png",
     "Attachments/Pasted image 20230908041354.png",
     "Attachments/Pasted image 20230908030150.png",
@@ -165,7 +178,6 @@
     "Server-Side/Untitled",
     "Attachments/Pasted image 20230904012200.png",
     "Attachments/Pasted image 20230904012159.png",
-    "Recon/SubDomainEnum/Passive.md",
     "Server-Side",
     "Recon/SubDomainEnum/CCNA.canvas",
     "Recon/SubDomainEnum/Passive",
