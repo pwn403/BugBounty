@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Server-Side/OS command injection.md",
-                "mode": "preview",
+                "file": "Server-Side/Authentication Vulns.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Server-Side/OS command injection.md",
+                "file": "Server-Side/Authentication Vulns.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Server-Side/OS command injection.md",
+                "file": "Server-Side/Authentication Vulns.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Server-Side/OS command injection.md"
+                "file": "Server-Side/Authentication Vulns.md"
               }
             }
           },
@@ -158,26 +158,27 @@
   },
   "active": "0e9346c7c7108b20",
   "lastOpenFiles": [
-    "Server-Side/File upload.md",
-    "Server-Side/OS command injection.md",
-    "Server-Side/Directory Traversal - Path Traversal.md",
+    "Server-Side/Broken Access Control.md",
     "Server-Side/Authentication Vulns.md",
+    "Server-Side/Directory Traversal - Path Traversal.md",
+    "Server-Side/File upload.md",
+    "Server-Side/SQLi.md",
+    "Server-Side/OS command injection.md",
+    "Attachments/Pasted image 20230908165356.png",
+    "Attachments/Pasted image 20230908112550.png",
+    "Attachments/Pasted image 20230908030150.png",
+    "Attachments/Pasted image 20230908013018.png",
+    "Attachments/Pasted image 20230904012159.png",
     "Bypass/Bypass 2FA.md",
     "Bypass",
-    "Server-Side/SQLi.md",
     "Recon/SubDomainEnum/Passive.md",
     "Recon/SubDomainEnum/Active.md",
     "Attachments/Pasted image 20230908210731.png",
     "Attachments/Pasted image 20230908201343.png",
-    "Attachments/Pasted image 20230908165356.png",
     "Attachments/Pasted image 20230908161102.png",
-    "Attachments/Pasted image 20230908112550.png",
     "Attachments/Pasted image 20230908041354.png",
-    "Attachments/Pasted image 20230908030150.png",
-    "Attachments/Pasted image 20230908013018.png",
     "Server-Side/Untitled",
     "Attachments/Pasted image 20230904012200.png",
-    "Attachments/Pasted image 20230904012159.png",
     "Server-Side",
     "Recon/SubDomainEnum/CCNA.canvas",
     "Recon/SubDomainEnum/Passive",
