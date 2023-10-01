@@ -12,14 +12,16 @@ SQL Injection (SQLi) is a code injection attack where an attacker manipulates th
 	3. products (price, description, availability )
 	4. also check the headers and cookies
 3. Do active scan in burp for the requests that looks Sus
-	1. blind sqli with time delays might not be detected using active scan, further manual work needed
+	1. blind sqli with time delays might not be detected using active scan, further manual testing  needed
 4. try to to add the following 
 	1. '
 	2. ;
 	3. --
 	4. use intruder in burpsuite, and select the SQLi wordlist 
-5. u need burp pro to detect and exploit Out-of-band SQLi
-6. try to make use of SQLmap, it will just make the exploitation process much easier
+5. Boolean conditions such as `OR 1=1` and `OR 1=2`, and look for differences in the application's responses.
+6. Payloads designed to trigger time delays when executed within a SQL query, and look for differences in the time taken to respond.
+7. u need burp pro to detect and exploit Out-of-band SQLi
+8. try to make use of SQLmap, it will just make the exploitation process much easier
 
 # Exploiting SQLi
 

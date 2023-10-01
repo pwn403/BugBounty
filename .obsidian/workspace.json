@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Server-Side/Business logic Vulns.md",
+                "file": "Server-Side/XML external entity (XXE) injection.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Server-Side/Business logic Vulns.md",
+                "file": "Server-Side/XML external entity (XXE) injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Server-Side/Business logic Vulns.md",
+                "file": "Server-Side/XML external entity (XXE) injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Server-Side/Business logic Vulns.md"
+                "file": "Server-Side/XML external entity (XXE) injection.md"
               }
             }
           },
@@ -159,15 +159,17 @@
   },
   "active": "0e9346c7c7108b20",
   "lastOpenFiles": [
+    "Server-Side/SQLi.md",
+    "Server-Side/XML external entity (XXE) injection.md",
+    "Server-Side/Information Disclosure.md",
+    "Server-Side/Business logic Vulns.md",
     "Server-Side/Broken Access Control.md",
     "Bypass/Bypass 403.md",
     "Server-Side/File upload.md",
     "Server-Side/Directory Traversal - Path Traversal.md",
     "Server-Side/OS command injection.md",
-    "Server-Side/Business logic Vulns.md",
     "Server-Side/Authentication Vulns.md",
     "Server-Side/Untitled",
-    "Server-Side/SQLi.md",
     "Attachments/Pasted image 20230908165356.png",
     "Attachments/Pasted image 20230908112550.png",
     "Attachments/Pasted image 20230908030150.png",
